@@ -1,8 +1,10 @@
 import React from 'react'
+import Search from './Search'
 
 const Dashboard = () => {
   return (
     <section className='p-16 flex flex-col gap-16'>
+        <Search />
         <div className='flex justify-between'>
             <div>
                 <span>July 2023</span>
