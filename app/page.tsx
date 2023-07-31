@@ -1,6 +1,9 @@
+'use client'
+
 import Dashboard from '@/components/Dashboard'
 import Search from '@/components/Search'
 import Sidebar from '@/components/Sidebar'
+import { useState } from 'react'
 
 interface weather {
   city: string,
@@ -29,6 +32,8 @@ interface weather {
 }
 
 export default function Home() {
+  const [weather, setWeather] = useState<weather>()
+
   return (
     <main className='flex'>
       {/* <Sidebar /> */}
