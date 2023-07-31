@@ -50,8 +50,12 @@ const Search: React.FC<{onCitySelect: (lat: number, long: number) => void}> = ({
   }
 
   return (
-    <div> 
-      <input onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleSearch(e.target.value)} type="text" className="text-black"/>
+    <div className="flex-1"> 
+      <input 
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleSearch(e.target.value)} 
+        type="text" 
+        className="text-black h-12 w-800"
+      />
       {cities.length > 0 && (
         <div className="bg-red-300 px-4 py-4 text-black absolute w-64 max-h-64 overflow-y-scroll flex gap-4 flex-col">
           {cities.map(city => <p key={city.id} onClick={() => onCitySelect(city.latitude, city.longitude)} className="bg-orange-500 flex-1">{city.city}</p>)}

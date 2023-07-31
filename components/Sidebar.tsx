@@ -1,6 +1,6 @@
 const Sidebar = () => {
     return ( 
-        <section className="flex-1 w-80 h-full border-r-2 border-r-indigo-100 float-left bg-gray-900">
+        <section className="flex-1 max-w-sm h-full border-r-2 border-r-indigo-100 float-left bg-gray-900">
             <div className="flex ">
                 <label htmlFor=""></label>
                 <input name="search" id="name" type="text"/>

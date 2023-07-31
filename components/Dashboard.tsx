@@ -25,10 +25,10 @@ const Dashboard = () => {
   }
 
   return (
-    <section className='p-16 flex flex-col gap-16'>
-        <div className='flex justify-between'>
-            <div>
-                <span>July 2023</span>
+    <section className='p-16 w-full flex flex-col gap-16 bg-gray-800'>
+        <div className='flex justify-between items-center gap-4'>
+            <div className='flex flex-col justify-between items-center'>
+                <span className='text-3xl'>July 2023</span>
                 <span>Monday, July 24, 2023</span>
             </div>
             <Search onCitySelect={citySelectHandler}/>
@@ -36,12 +36,12 @@ const Dashboard = () => {
             {/* <label htmlFor="search"></label>
             <input id='search' name='search'/> */}
         </div>
-        <div className='grid-cols-3 grid-rows-2'>
-            <h3>Today Overview</h3>
-            <span>More Detail</span>
-            <div>
-                <div>Ic</div>
-                <div>
+        <div className='grid grid-cols-4 grid-auto-rows gap-4'>
+            <h3 className='col-span-2'>Today Overview</h3>
+            <span className='col-span-2 text-right'>More Detail</span>
+            <div className='weather-card'>
+                <h4>Ic</h4>
+                <div className='sub-card'>
                     <h3>Wind Speed</h3>
                     <span>12Km/h</span>
                 </div>
@@ -49,9 +49,9 @@ const Dashboard = () => {
                     2Km/h increase
                 </div>
             </div>
-            <div>
-                <div>Ic</div>
-                <div>
+            <div className='weather-card'>
+                <h4>Ic</h4>
+                <div className='sub-card'>
                     <h3>Wind Speed</h3>
                     <span>12Km/h</span>
                 </div>
@@ -59,9 +59,9 @@ const Dashboard = () => {
                     2Km/h increase
                 </div>
             </div>
-            <div>
-                <div>Ic</div>
-                <div>
+            <div className='weather-card'>
+                <h4>Ic</h4>
+                <div className='sub-card'>
                     <h3>Wind Speed</h3>
                     <span>12Km/h</span>
                 </div>
@@ -69,9 +69,9 @@ const Dashboard = () => {
                     2Km/h increase
                 </div>
             </div>
-            <div>
-                <div>Ic</div>
-                <div>
+            <div className='weather-card'>
+                <h4>Ic</h4>
+                <div className='sub-card'>
                     <h3>Wind Speed</h3>
                     <span>12Km/h</span>
                 </div>

@@ -36,7 +36,7 @@ export default function Home() {
 
   return (
     <main className='flex'>
-      {/* <Sidebar /> */}
+      <Sidebar />
       <Dashboard />
     </main>
   )
